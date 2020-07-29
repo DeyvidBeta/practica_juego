@@ -1,0 +1,80 @@
+/* BOTON MENU ICONO */
+
+/* OCULTAR BOTON MENU */
+
+.hide-btn-menu {
+
+}
+
+.nav-main [type="checkbox"]{
+	display: none;
+
+}
+.btn-menu {
+	/*display: none;*/
+	background-color: white;
+	cursor: pointer;
+
+	/*border: 1px solid black;*/
+	border-radius: 5px;
+
+	/*padding: 1em .8em;*/
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	
+	max-width: 3rem;
+	max-height: 3rem;
+	min-width: 50px%;
+	min-height: 5px;
+
+	/*filter: blur(1px);*/
+}
+
+.btn-menu [class^="ico-"] {
+	/*display: none;*/
+	content: "";
+	background-color: black;
+	/*border-radius: 10px;*/
+	/*position: absolute;*/
+
+	/*display: flex;*/
+	justify-content: center;
+	
+	width: 100%;
+	height: 100%;
+	transform: translateY(-5px);
+	transition: transform .4s;
+/*	transition-property: transform;*/
+}
+
+.btn-menu .ico-2 {
+	transform: translateY(0px);
+}
+
+.btn-menu .ico-3 {
+	transform: translateY(5px);
+}
+
+
+#btn_menu:checked ~ .btn-menu .ico-1 {
+	transform: rotate(45deg) translate(4px, 2.5px);}
+
+#btn_menu:checked ~ .btn-menu .ico-2 {
+	/*transform: rotate(145deg);*/
+	opacity: 0;
+}
+
+#btn_menu:checked ~ .btn-menu .ico-3 {
+	transform: rotate(-45deg) translate(4px, -2.5px);
+}
+
+
+#btn_menu:checked ~ .box-menu .nav-menu{
+	transform: translateX(0%);
+	opacity: 1;
+	filter: blur(0px);
+	/*background-color: orange;*/
+}

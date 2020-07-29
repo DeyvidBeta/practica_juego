@@ -1,0 +1,64 @@
+/* BOTON MENU NAVBAR */
+	.nav-main [type="checkbox"]{
+	display: none;
+	}
+
+	.nav-main .btn-menu {
+		display: none;
+		/*display: flex;*/
+		/*background-color: orange;*/
+		padding: 5px;
+		height: 40px;
+		width: 45px;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+	}
+
+	.nav-main .btn-menu .btn-ico {
+		border-radius: 15px;
+		background-color: black;
+		width: 25px;
+		height: 5px;
+
+		display: flex;
+		flex-direction: column-reverse;
+		transition: .5s;
+	}
+
+	.nav-main .btn-menu .btn-ico::before,
+	.nav-main .btn-menu .btn-ico::after {
+		content: "";
+		background-color: black;
+		border-radius: 15px;
+		min-width: 100%;
+		min-height: 100%;
+
+		transition: .5s;
+	}
+
+	.nav-main .btn-menu .btn-ico::before {
+		transform: translateY(-10px);
+	}
+
+	.nav-main .btn-menu .btn-ico::after {
+		transform: translateY(15px);
+	}
+
+	/* CHECKED NOTON NAVBAR */
+	#btn_menu:checked ~ .btn-menu .btn-ico {
+		background-color: transparent;
+	}
+
+	#btn_menu:checked ~ .btn-menu .btn-ico::before {
+		transform: translateY(0px) rotate(45deg);
+	}
+
+	#btn_menu:checked ~ .btn-menu .btn-ico::after {
+		transform: translateY(5px) rotate(-45deg);
+	}
+
+@media (max-width: 768px) {
+
+
+}

@@ -3,37 +3,65 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" href="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>COD - Servicios Informaticos</title>
+	<link rel="stylesheet" href="css/bgmaqueta.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/rwd.css">
+	<link rel="stylesheet" href="css/buttons.css">
 </head>
 <body>
-	<a href="adivina el numero v2/index.html">IR V2</a>
-<!-- 	<p class="guesses"></p>
-	<p class="lastResult"></p>
-	<p class="lowOrHi"></p>
-
-	<label for="guessField">Adivina el número: </label>
-	<input type="text" id="guessField" class="guessField">
-	<input type="submit" value="Enviar intento" class="guessSubmit"> -->
-
-
-
-	<h1>"Adivina el número"</h1>
-	<p>Trata de adivinar el número que va del 1 al 20 en menos de 6 turnos</p>
-	<input class="numeroInput" placeholder="Digita aquí tu número">
-	<input class="jugar" type="submit" value="¡JUGAR!" onclick='validar()'>
-
-	<p class="intentos"></p>
-	<p class="resultado"></p>
-	<p class="orientar"></p>
-
-
-
-
-
-
-
-	<!-- <script src="js/moz_juego.js" type="text/javascript" charset="utf-8" async defer></script> -->
-	<script src="js.js" type="text/javascript" charset="utf-8" async defer></script>
+	<header class="header">
+		<div class="logo">
+			<a href="#logo">
+			<h1 class="name">COD</h1>
+			</a>
+			<p class="slogan">SERVICIOS<br>INFORMATICOS</p>
+		</div>
+		<div class="nav-main">
+			<input type="checkbox" id="btn_menu">
+			<label for="btn_menu" class="btn-menu">
+				<span class="btn-ico"></span>
+<!-- 			<span class="ico-1"></span>
+				<span class="ico-2"></span>
+				<span class="ico-3"></span> -->
+			</label>
+			<nav class="box-menu">
+				<ul class="nav-menu">
+					<li class="nav-list"><a class="nav-link" href="#inicio">inicio</a></li>
+					<li class="nav-list"><a class="nav-link" href="#servicios">servicios</a></li>
+					<li class="nav-list"><a class="nav-link" href="#contacto">contacto</a></li>
+					<li class="nav-list"><a class="nav-link" href="#blog">blog</a></li>
+					<li class="nav-list"><a class="nav-link" href="#vitrina">vitrina</a></li>
+				</ul>
+			</nav>
+		</ndiv>
+	</header>
+	<!-- <img src="recursos/img/laptop.jpg" alt=""> -->
+	<!-- <section class="section-1"> -->
+<!-- 		<input type="checkbox" id="btn_menu_prueba">
+			<label for="btn_menu_prueba" class="btn-menu-prueba">
+				<span class="span-prueba"></span>
+			</label> -->
+	<!-- 	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ullam ut quo facilis animi adipisci tenetur. Provident atque cupiditate necessitatibus blanditiis magnam illo debitis ex delectus, facilis consequuntur doloremque sed.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio earum facere, maxime et, doloremque voluptatibus consequuntur aliquam beatae magnam nobis aspernatur dolore delectus. Quis adipisci quasi exercitationem architecto sunt quaerat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nostrum cupiditate sint ducimus! Voluptas explicabo rem, eos, placeat perspiciatis, voluptates error veniam ea esse fugit deserunt! Nemo, nostrum! Autem, dolor.</p>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ullam ut quo facilis animi adipisci tenetur. Provident atque cupiditate necessitatibus blanditiis magnam illo debitis ex delectus, facilis consequuntur doloremque sed.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio earum facere, maxime et, doloremque voluptatibus consequuntur aliquam beatae magnam nobis aspernatur dolore delectus. Quis adipisci quasi exercitationem architecto sunt quaerat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nostrum cupiditate sint ducimus! Voluptas explicabo rem, eos, placeat perspiciatis, voluptates error veniam ea esse fugit deserunt! Nemo, nostrum! Autem, dolor.</p>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ullam ut quo facilis animi adipisci tenetur. Provident atque cupiditate necessitatibus blanditiis magnam illo debitis ex delectus, facilis consequuntur doloremque sed.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio earum facere, maxime et, doloremque voluptatibus consequuntur aliquam beatae magnam nobis aspernatur dolore delectus. Quis adipisci quasi exercitationem architecto sunt quaerat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nostrum cupiditate sint ducimus! Voluptas explicabo rem, eos, placeat perspiciatis, voluptates error veniam ea esse fugit deserunt! Nemo, nostrum! Autem, dolor.</p>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ullam ut quo facilis animi adipisci tenetur. Provident atque cupiditate necessitatibus blanditiis magnam illo debitis ex delectus, facilis consequuntur doloremque sed.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio earum facere, maxime et, doloremque voluptatibus consequuntur aliquam beatae magnam nobis aspernatur dolore delectus. Quis adipisci quasi exercitationem architecto sunt quaerat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nostrum cupiditate sint ducimus! Voluptas explicabo rem, eos, placeat perspiciatis, voluptates error veniam ea esse fugit deserunt! Nemo, nostrum! Autem, dolor.</p>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ullam ut quo facilis animi adipisci tenetur. Provident atque cupiditate necessitatibus blanditiis magnam illo debitis ex delectus, facilis consequuntur doloremque sed.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio earum facere, maxime et, doloremque voluptatibus consequuntur aliquam beatae magnam nobis aspernatur dolore delectus. Quis adipisci quasi exercitationem architecto sunt quaerat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nostrum cupiditate sint ducimus! Voluptas explicabo rem, eos, placeat perspiciatis, voluptates error veniam ea esse fugit deserunt! Nemo, nostrum! Autem, dolor.</p>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ullam ut quo facilis animi adipisci tenetur. Provident atque cupiditate necessitatibus blanditiis magnam illo debitis ex delectus, facilis consequuntur doloremque sed.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio earum facere, maxime et, doloremque voluptatibus consequuntur aliquam beatae magnam nobis aspernatur dolore delectus. Quis adipisci quasi exercitationem architecto sunt quaerat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nostrum cupiditate sint ducimus! Voluptas explicabo rem, eos, placeat perspiciatis, voluptates error veniam ea esse fugit deserunt! Nemo, nostrum! Autem, dolor.</p> -->
+		
+	<!-- </section> -->
 </body>
 </html>

@@ -1,0 +1,93 @@
+/* M medium devices - tablets, 768px to up*/
+@media (max-width: 768px) {
+
+	body {
+		font-size: 12px;
+		position: relative;
+	}
+
+	.header {
+		overflow: initial;
+		padding: 0;
+		position: absolute;
+	}
+
+	.header .logo {
+		width: 100%;
+	}
+
+	.header .nav-main{
+		/*width: 10vw;*/
+		position: relative;
+		width: 10vw;
+		margin-right: 15px;
+		/*overflow-wrap: w;*/
+	}
+		
+	.header .nav-main .btn-menu {
+		display: flex;
+		width: 45px;
+	}
+
+	.header .nav-main .box-menu {
+		top: 50px;
+		min-width: 100vw;
+		position: absolute;
+		z-index: -2;
+		transition: top,transform .3s;
+		transform: translateY(-100%);
+	}
+
+	.header .nav-main .box-menu .nav-menu {
+		padding: 0;
+		margin: 0;
+		min-width: 100%;
+		display: flex;
+		flex-direction: column;
+		height: calc(100vh - 50px);
+	}
+
+	.header .nav-main .box-menu .nav-menu .nav-list {
+		width: 100%;
+		height: 100%;
+
+
+	}
+
+	.header .nav-main .box-menu .nav-menu .nav-list .nav-link {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#btn_menu:checked ~ .box-menu {
+		/*top: 45px;*/
+		transform: translateY(0%);
+
+		/*transform: translateY(50px);*/
+		/*z-index: 1;*/
+	}
+
+}
+
+
+
+
+/* XL extra large devices - large desktops, 992px to up*/
+@media (max-width: 1220px) {
+	
+}
+
+/* L large devices - desktops, 992px to up*/
+@media (max-width: 992px) {
+	
+}
+
+/* en code */
+
+/* S small devices - phones, 576px to up*/
+@media (max-width: 576px) {
+	
+}

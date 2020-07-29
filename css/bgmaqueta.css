@@ -1,0 +1,35 @@
+.header {
+	background-color: #dddddf;
+}
+
+.logo {
+	/*background-color: blue;*/
+}
+
+.nav-main {
+	/*background-color: yellow;*/
+}
+
+.nav-main .nav-menu {
+	/*background-color: green;*/
+}
+
+/*@media (max-width: 768px) {
+	.header {
+	background-color: yellow;
+	}
+
+	.logo {
+		background-color: blue;
+	}
+
+	.nav-main {
+		background-color: orange;
+	}
+
+	.nav-main .nav-menu {
+		background-color: rgb(110,210,20.2);
+	}
+}*/
+
+
